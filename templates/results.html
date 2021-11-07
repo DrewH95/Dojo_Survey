@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Results!</title>
+    <style>
+        .master {
+            background-color: white;
+            height: 700px;
+            width: 800px;
+            /* margin: auto; */
+            display: flex;
+            justify-content:center;
+            align-items: center;
+        }
+        .box1 {
+            background-color: darkgray;
+            height: 400px;
+            width: 350px;
+            padding: 10px;
+            
+        }
+        h1 {
+            color: gold;
+        }
+        h3 {
+            background-color: rgb(233, 233, 233);
+            height: auto;
+            width: auto;
+        }
+        a {
+            color:navy;
+        }
+    </style>
+</head>
+<body>
+    <div class="master">
+        <div class="box1">
+            <h1>Survey Results</h1>
+            <h3>Name: {{session["name"]}}</h3>
+            <h3>Location: {{session["location"]}}</h3> 
+            <h3>Language: {{session["language"]}}</h3> 
+            <h3>Comments: {{session["comments"]}}</h3>
+            <h4><a href="/">Take Another Survey</a></h4>
+        </div>
+    </div>
+</body>
+</html>
